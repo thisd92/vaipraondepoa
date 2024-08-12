@@ -12,7 +12,6 @@ const sequelize = new Sequelize(db_name, db_username, db_pass, {
 );
 
 async function syncDatabase() {
-    console.log(`Connecting to database on host: ${db_host}, database: ${db_name}`);
     try {
         await sequelize.authenticate();
         console.log('Connection has been established successfully.');
